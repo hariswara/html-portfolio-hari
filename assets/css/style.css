@@ -1,10 +1,70 @@
-h1 {
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+:root {
+  --dark-primary: #1b1f24;
+  --blue-primary: #12bdff;
 }
-.paraOne {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito Sans", sans-serif; /* Example usage */
+}
+
+/* header */
+header {
+  background-color: var(--dark-primary);
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  text-decoration: none;
+}
+
+/* logo */
+
+header .logo {
+  color: var(--blue-primary);
   font-weight: bold;
-  color: green;
+  letter-spacing: 2px;
 }
-#anchor {
-  font-size: 24px;
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+ul li {
+  margin-right: 20px;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: var(--blue-primary);
+}
+
+/*header button*/
+button {
+  padding: 10px 20px;
+  font-weight: 600;
+  background-color: var(--dark-primary);
+  border: 1px solid var(--blue-primary);
+  color: var(--blue-primary);
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--blue-primary);
+  color: #fff;
 }
